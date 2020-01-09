@@ -2,6 +2,8 @@
 
 > A small web app including weather and news
 
+demo:https://self-regulation.cn/weather-joke/index.html#/home
+
 ## Build Setup
 
 ``` bash
