@@ -1,8 +1,8 @@
 # web-app-demo
 
-> A small web app including weather and news
-Use vue vuex vue-router axios jsonp...
-Suitable for novices to practice vue
+> A small web app including weather and news<br>
+Use vue vuex vue-router axios jsonp...<br>
+Suitable for novices to practice vue<br>
 
 
 <a href='https://self-regulation.cn/weather-joke/index.html#/home'>DEMO</a>
