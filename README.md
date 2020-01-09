@@ -2,7 +2,8 @@
 
 > A small web app including weather and news
 
-demo:https://self-regulation.cn/weather-joke/index.html#/home
+<a href='https://self-regulation.cn/weather-joke/index.html#/home'>demo</a>
+
 
 ## Build Setup
 
