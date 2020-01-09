@@ -3,8 +3,8 @@
 > A small web app including weather and news
 > Suitable for novices to practice vue
 
-<a href='https://self-regulation.cn/weather-joke/index.html#/home'>DEMO</a>
 
+<a href='https://self-regulation.cn/weather-joke/index.html#/home'># DEMO</a>
 
 ## Build Setup
 
