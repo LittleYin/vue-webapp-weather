@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <router-view />
+    <keep-alive exclude="Home">
+      <router-view />
     </keep-alive>
-    <TabBarDemo/>
+    <TabBarDemo />
   </div>
 </template>
 
 <script>
-import TabBarDemo from "./components/tabbar/TabBarDemo"
+import TabBarDemo from "./components/tabbar/TabBarDemo";
 export default {
   name: "App",
   components: {
-    TabBarDemo,
+    TabBarDemo
   }
 };
 </script>
