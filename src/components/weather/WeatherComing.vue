@@ -1,11 +1,11 @@
 <template>
   <div id="WeatherComing">
 <div class="tem tem2 animated bounceInUp">
-        <div class="imgline">
+        <div class="imgline WeatherContent">
           <img src="../../assets/img/更多.svg" class="oicon" />
           <span>未来</span>
         </div>
-        <div>
+        <div class="WeatherContent">
           <div>
             <ul>
               <li class="li1">{{this.$store.state.data.daily_forecast[1].date.substr(5)}}</li>

@@ -14,7 +14,7 @@
       <tab-bar-item path="/joke">
         <img slot="item-icon" src="../../assets/img/xinwenyulun.svg" />
         <img slot="item-icon-active" src="../../assets/img/xinwenyulunactive.svg" />
-        <div slot="item-text">笑话</div>
+        <div slot="item-text">段子</div>
       </tab-bar-item>
       <tab-bar-item path="/about">
         <img slot="item-icon" src="../../assets/img/guanyuwomen.svg" />

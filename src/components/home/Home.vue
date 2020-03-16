@@ -1,17 +1,25 @@
 <template>
   <div id="Home">
-    <div class="header animated bounceInLeft">Welcome</div>
+    <news />
     <my-carousel />
+    <OneWord />
   </div>
 </template>
 
 <script>
 import MyCarousel from "./MyCarousel"
+import News from './News'
+import OneWord from './OneWord'
 
 export default {
   name: "Home",
   components: {
-    MyCarousel
+    MyCarousel,
+    News,
+    OneWord
   }
 };
 </script>
+
+<style scoped>
+</style>

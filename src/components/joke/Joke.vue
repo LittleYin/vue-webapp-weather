@@ -1,6 +1,5 @@
 <template>
-  <div id="Joke" v-bind:class="{acHeight: isActive}">
-    <div class="header animated bounceInUp">Joke</div>
+  <div id="Joke">
     <div v-if="!alert">
       <JokeContent
         :joke1="joke1"
@@ -30,7 +29,6 @@ export default {
   data() {
     return {
       alert: false,
-      isActive: false,
       joke1: "",
       joke2: "",
       joke3: "",
@@ -43,24 +41,12 @@ export default {
       joke10: ""
     };
   },
-  mounted() {
+  created() {
     this.getJoke();
-    window.addEventListener("scroll", this.handleScroll, true);
   },
   methods: {
-    handleScroll() {
-      var scrollTop =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-      if (scrollTop) {
-        this.isActive = true;
-      } else {
-        this.isActive = false;
-      }
-    },
     getJoke() {
-      this.$jsonp("http://v.juhe.cn/joke/randJoke.php", {
+      this.$jsonp("//v.juhe.cn/joke/randJoke.php", {
         key: "d67a7c323829ca4a078d97c6de02c960"
       })
         .then(json => {

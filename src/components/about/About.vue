@@ -1,20 +1,27 @@
 <template>
-  <div id="About"> 
-    <div class="header  animated bounceInUp">About</div>
-     <Introduction />
-      <Copyright />
+  <div id="About">
+    <Introduction />
+    <Copyright />
+    <Donate />
   </div>
 </template>
  
 <script>
-import Introduction from "./Introduction"
-import Copyright from "./Copyright"
+import Introduction from "./Introduction";
+import Copyright from "./Copyright";
+import Donate from "./Donate";
+
 
 export default {
-  name: 'About',
-  components:{
+  name: "About",
+  components: {
     Introduction,
-    Copyright
+    Copyright,
+    Donate
   }
-}
+};
 </script>
+
+<style scoped>
+
+</style>

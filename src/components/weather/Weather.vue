@@ -1,7 +1,6 @@
 <template>
   <div id="Weather">
     <div v-if="showWeather">
-        <div class="header animated bounceInUp">Weather</div>
       <weather-search />
       <weather-now />
       <weather-coming />
@@ -12,37 +11,37 @@
 </template>
 
 <script>
-import WeatherSearch from './WeatherSearch'
-import WeatherNow from './WeatherNow'
+import WeatherSearch from "./WeatherSearch";
+import WeatherNow from "./WeatherNow";
 import WeatherComing from "./WeatherComing";
 import WeatherMore from "./WeatherMore";
-import WeatherSug from "./WeatherSug"
+import WeatherSug from "./WeatherSug";
 
 export default {
   name: "Weather",
-    components: {
+  components: {
     WeatherSearch,
     WeatherNow,
     WeatherComing,
     WeatherMore,
     WeatherSug
   },
-    computed: {
+  computed: {
     vuexaxioscity() {
       return this.$store.state.data;
     },
     showWeather() {
       return this.vuexaxioscity ? true : false;
-    },
+    }
   },
-   mounted() {
+  created() {
     this.sendDefaultUid();
   },
-  methods:{
-      sendDefaultUid() {
+  methods: {
+    sendDefaultUid() {
       this.$store.state.uid = "重庆";
       this.$store.dispatch("getWeather");
-    },
+    }
   }
 };
 </script>

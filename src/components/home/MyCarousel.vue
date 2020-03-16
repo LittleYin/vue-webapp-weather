@@ -3,18 +3,18 @@
     <!-- swiper -->
     <swiper :options="swiperOption" class="swiper">
       <swiper-slide>
-        <div>
-          <img src="../../assets/img/Home/542198.jpg" alt="slideimg1" class="slideimg" />
-        </div>
-        <span class="slidetext">Vue全家桶demo</span>
-      </swiper-slide>
-      <swiper-slide>
         <a href="https://self-regulation.cn/">
           <div>
-            <img src="../../assets/img/Home/753756.jpg" alt="slideimg2" class="slideimg" />
+            <img src="../../assets/img/Home/542198.jpg" alt="slideimg1" class="slideimg" />
           </div>
           <span class="slidetext">作者博客</span>
         </a>
+      </swiper-slide>
+      <swiper-slide>
+        <div>
+          <img src="../../assets/img/Home/753756.jpg" alt="slideimg2" class="slideimg" />
+        </div>
+        <span class="slidetext">不定期优化</span>
       </swiper-slide>
       <swiper-slide>
         <div>
@@ -24,7 +24,7 @@
             class="slideimg"
           />
         </div>
-        <span class="slidetext">&gt;ㅂ&lt;</span>
+        <span class="slidetext">感谢体验</span>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -39,14 +39,8 @@ export default {
   data() {
     return {
       swiperOption: {
-        effect: "cube",
+        effect: "slide",
         grabCursor: true,
-        cubeEffect: {
-          shadow: false,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94
-        },
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -74,14 +68,16 @@ export default {
 <style>
 .swiper {
   display: block;
-  width: 100%;
+  width: 94%;
   height: 211px;
   font-size: 30px;
   text-align: center;
+  border-radius: 5px;
 }
 .slideimg {
   width: 100%;
   height: 211px;
+  border-radius: 5px;
 }
 .slidetext {
   position: relative;

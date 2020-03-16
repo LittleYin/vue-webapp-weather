@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -8,12 +14,8 @@ body{
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #2c3e50;
-      height: 100vh;
-    
     }
-    div {
-      display: block;
-    }
+
     
     a {
         text-decoration: none;
@@ -38,23 +40,14 @@ body{
     a:focus {
         text-decoration: none;
     }
-    .header{
-        position: relative;
-          font-size: 30px;
-          text-align: center;
-          font-weight: 500;
-          text-shadow: 1px 1px 3px;
-          left: 0;
-          right: 0;
-          color: white;
-      }
       div {
         display: block;
       }
       .divContent{
-        margin: 10px 10px;
+        position: relative;
+        margin: 20px 10px;
         padding: 5px 10px;
-        background-color: white;
+        background-color: #fafafa;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,.2);
       }
@@ -126,35 +119,22 @@ body{
         transform: translateY(4px) translateZ(0);
         box-shadow: 0px 8px 10px -6px #003f77;
       }
-      #Home {
-        background-image: linear-gradient(160deg, #a200ff3d 20%, #cf370069 80%);
-        height: 100vh;
-      }
-      #About{
-        height: 100vh;
-        background-image: linear-gradient(160deg, #b300ff78 20%,#00b3ff81 80%);
-       }
        #Joke {
-        background-image: linear-gradient(160deg, #ff99008f 20%, #bbff004b 80%);
-        background-size: 100% 100%;
-        margin-bottom: 50px;
-        padding-bottom: 55px;
-        height: 100vh;
-      }
-      .acHeight {
+        margin-bottom: 70px;
+        padding-bottom: 85px;
         height: max-content !important;
       }
-      
       .paddding {
         margin-bottom: 10px;
       }
       #Weather {
-        background-image: linear-gradient(160deg, #00ffd5 20%, #008cffc0 80%);
-        background-size:cover;
         margin-bottom: 40px;
+        height: max-content !important;
       }
       #WeatherSearch{
         text-align: center;
+        position: relative;
+        margin-top: 20px;
       }
       .oinput {
         width: 140px;
@@ -162,6 +142,7 @@ body{
         border: 1px solid rgb(206, 194, 194);
         border-radius: 20px;
         padding: 6px 8px;
+        background-color: #fafafa;
       }
       .oinput:focus {
         border-color: #66afe9;
@@ -177,22 +158,16 @@ body{
         left: 40%;
         top: 2%; */
       }
+
       .tem {
-        margin: 10px 5px;
-        padding: 5px 10px;
-        background-color: white;
+        position: relative;
+        margin: 20px 10px;
+        background-color: #fafafa;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,.2);
       }
-      .tem1 {
-        height: 79.844px;
-      }
-      .tem2 {
-        height: 179.844px;
-      }
-      .tem3 {
-        height: 569.844px;
-      }
+
+
       .temnow {
         font-size: 26px;
       }
@@ -201,9 +176,8 @@ body{
         font-size: 30px;
       }
       .temMaxMin {
-        margin: 0;
         padding: 0;
-        width: 20%;
+        width: 25%;
         display: inline-block;
       }
       .temCity {
@@ -211,7 +185,7 @@ body{
         width: 40%;
       }
       .temCond {
-        width: 40%;
+        width: 32%;
       }
       .oicon {
         width: 22px;
@@ -227,7 +201,7 @@ body{
         margin: 5px 0;
         display: block;
         float: left;
-        font-size: 15px;
+        font-size: 14px;
         position: relative;
         transition: all 0.3s ease-out;
         list-style: none;
@@ -237,22 +211,20 @@ body{
         width: 40%;
       }
       .li2 {
-        width: 40%;
+        width: 30%;
       }
       .clear {
         clear: both;
       }
-      .temandpop {
-        line-height: 20px;
-      }
+ 
       .temPop {
-        margin: 0;
+ 
         padding: 0;
         display: inline-block;
-        width: 80%;
+        width: 70%;
       }
       .sugspace {
-        margin-top: 5px;
+        margin-top: 10px;
       }
       .datashow {
         margin-bottom: 10px;
@@ -261,8 +233,26 @@ body{
         width: 50%;
       }
      #Weather{
-       padding-bottom: 55px;
+       padding-bottom: 70px; 
+     }
+     #About{
+      padding-bottom: 20px; 
      }
      .cspace{
        margin-bottom: 20px;
      }
+ html::-webkit-scrollbar { width: 0 !important }
+ html { -ms-overflow-style: none; }
+ html { overflow: -moz-scrollbars-none; 
+     }
+
+.imgline{
+ background-color: #cac6c6;
+ color: white;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+.WeatherContent{
+  padding: 5px 10px;
+}

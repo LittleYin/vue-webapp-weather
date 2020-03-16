@@ -1,11 +1,11 @@
 <template>
     <div id="WeatherNow">
     <div class="tem tem1 animated bounceInUp">
-      <div class="imgline">
+      <div class="imgline WeatherContent">
         <img src="../../assets/img/再多.svg" class="oicon" />
-        <span>天气</span>
+        <span>当前</span>
       </div>
-      <div>
+      <div class="WeatherContent">
         <div>
           <ul>
             <li class="temCity">{{this.$store.state.data.basic.city}}</li>
@@ -26,9 +26,12 @@
     </div>
     </div>
 </template>
-
+ 
 <script>
 export default {
-    name:"WeatherNow"
+    name:"WeatherNow",
 }
 </script>
+
+<style scoped>
+</style>

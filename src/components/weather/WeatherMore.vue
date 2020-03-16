@@ -2,11 +2,11 @@
     <div id="WeatherMore">
  
       <div class="tem tem3 animated bounceInUp">
-        <div class="imgline">
+        <div class="imgline WeatherContent">
           <img src="../../assets/img/天气.svg" class="oicon" />
-          <span>更多</span>
+          <span>详情</span>
         </div>
-        <div>
+        <div class="WeatherContent">
           <div>
             <div>
               <ul>

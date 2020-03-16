@@ -34,17 +34,18 @@ export default {
 <style scoped>
 .tab-bar-item {
   font-size: 14px;
+  font-weight: 560;
   flex: 1;
   text-align: center;
-  height: 49px;
+  height: 70px;
   background-color: #f6f6f6;
 }
 .tab-bar-item img {
-  width: 20px;
-  padding-top: 4px;
+  width: 24px;
+  padding-top: 6px;
   margin: 0px;
 }
 .active {
-  color: #e8989a;
+  color: #FFC0CB;
 }
 </style>
