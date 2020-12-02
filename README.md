@@ -5,7 +5,7 @@ Use vue vuex vue-router axios jsonp...<br>
 Suitable for novices to practice vue<br>
 
 
-<a href='https://self-regulation.cn/weather-joke/index.html#/home'>DEMO</a>
+<a href='https://self-regulation.cn/weather-joke/#/home'>DEMO</a>
 
 
 
